@@ -1,4 +1,4 @@
-# Student Performance Analyzer 🎓
+# Student Performance Analyzer 
 
 This is a Python mini-project that collects students' names and marks, then analyzes their performance.
 
