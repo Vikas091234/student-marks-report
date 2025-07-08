@@ -9,7 +9,7 @@ This is a Python mini-project that collects students' names and marks, then anal
 - Finds top and lowest scorers (handles ties)
 - Highlights high (>75) and low (<40) scorers
 
-## 🛠 How to Use:
+##  How to Use:
 1. Run the Python file `student_analysis.py`
 2. Enter names and marks for each student
 3. Type `done` to finish entries
