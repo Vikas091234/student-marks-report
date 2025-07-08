@@ -25,15 +25,15 @@ def analyze_data(students):
   max_score = max(students.values())# returns the highest marks 
   min_score = min(students.values())# returns the lowest marks
     
-  top_students = [marks for name, marks in students.items() if marks == max_score] # returns the students with highest marks 
-  bottom_students = [marks for name, marks in students.items() if marks == min_score]# returns hte students with lowest marks
-  high_scorers = {name: marks for name, marks in students.items() if marks > 75}# returns the data of students with score >75
-  low_scorers = {name: marks for name, marks in students.items() if marks < 40} # returns the data of students with score < 40
+  top_students = [name for name, marks in students.items() if marks == max_score] # returns the students with highest marks 
+  bottom_students = [name for name, marks in students.items() if marks == min_score]# returns hte students with lowest marks
+  high_scorers = [ name for name, marks in students.items() if marks > 75]# returns the data of students with score >75
+  low_scorers = [ name for name, marks in students.items() if marks < 40]  # returns the data of students with score < 40
 
   print("\n  Students Data "  )  
   print("Average Score:",average)
-  print(f"Student with top score is {top_students} with a score {students[top_students]}")
-  print(f"Student with lowest score is {bottom_students} with a score {students[bottom_students]}")
+  print(f"Top Scorers ({max_score}): {', '.join(top_students)}")
+  print(f"Lowest Scorers ({min_score}): {', '.join(bottom_students)}")
   print("High scorers (>75):", high_scorers)
   print("Low scorers (<40):", low_scorers)
 
